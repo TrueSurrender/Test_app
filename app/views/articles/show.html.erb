@@ -1,0 +1,13 @@
+<style>
+  .article-wrapper {
+    text-align: center;
+    padding: 1em;
+  }
+</style>
+<div class="navbar">
+  <%= link_to 'Home', pages_home_path %>
+</div>
+<div class="article-wrapper">
+  <p><%= @article.title %></p>
+  <p>Description: <%= @article.description %></p>
+</div>
