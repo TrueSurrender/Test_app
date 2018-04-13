@@ -1,5 +1,4 @@
 <style>
-  
   body {
     font-family: 'Helvetica', sans-serif;
     max-width: 100%;
@@ -53,46 +52,10 @@
     padding: 40px;
   }
   
-  
-  .navbar {
-    background-color: #0f0f0f;
-    height: 50px;
-    color: #fff;
-    position: absolute;
-    z-index: 1000;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .navbar ul {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
-  }
-  
-  .navbar li {
-    text-align: center;
-    display: inline-block;
-    padding: 10px;
-  }
-  
   .logo img {
     width: 100px;
     float: right;
     padding: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a:hover {
-    border: solid 1px #0b9159;
-    padding: 10px;
   }
   
   .footer {
@@ -114,13 +77,7 @@
 
 <div class='row'>
    <div class='col-md-12'>
-      <div class='navbar'>
-        <ul>
-          <li><%= link_to 'Home', pages_home_path %>
-          <li><%= link_to 'About', about_path %>
-          <li><%= link_to 'Articles', articles_path %></li>
-        </ul>
-      </div>
+     <%= render 'layouts/navigationbar' %>
       <span class="logo">
           <img src="http://aezel.eu/aezel/themes/aezel/images/logos/Tree_logo.png">
         </span>
@@ -133,7 +90,8 @@
          Tree unlimited
       </h1>
       <p>
-        Where green is really green..
+        Where green is really green.. <br/>
+        Stories about alternative medicine and nature..
       </p>
     </div>
   </div>

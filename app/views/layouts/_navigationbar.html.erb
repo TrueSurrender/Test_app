@@ -1,0 +1,44 @@
+<style>
+.navbar {
+    background-color: #0f0f0f;
+    height: 50px;
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+  }
+  
+  .navbar li {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+    a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a:hover {
+    border: solid 1px #0b9159;
+    padding: 10px;
+  }
+</style>
+<div class='navbar'>
+  <ul>
+    <li><%= link_to 'Home', pages_home_path %></li>|
+    <li><%= link_to 'Articles', articles_path %></li>|
+    <li><%= link_to 'About', about_path %></li>|
+    <li><%= link_to 'Contact us', contact_path %></li>
+  </ul>
+</div>
